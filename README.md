@@ -1,2 +1,2 @@
-# personal-website
-working on uploaing my projects, interests and resumes
+# Personal Website
+My research work, teaching, class and club projects.
