@@ -99,7 +99,7 @@
               </p>
               <p>
 
-                Previously, I was an undergraduate student at <a href="https://eecs.berkeley.edu/">UC Berkeley</a> where I received my BS in Electrical Engineering and Computer Science. I was an undergraduate researcher in the <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence and Research Lab</a>. working with <a href="https://people.eecs.berkeley.edu/~svlevine/">Professor Sergey Levine</a>, <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr Pong</a> and <a href="https://ashvin.me/">Ashvin Nair</a> on deep reinforcement learning and robotics research. I also interned at <a href="https://x.company/">(Google) X Robotics</a> where I worked with <a href="https://www.linkedin.com/in/daniel-kappler-a20b337b/">Daniel Kappler</a> on a project at the intersection of reinforcement learning, robotics and meta-learning.
+                Previously, I was an undergraduate student at <a href="https://eecs.berkeley.edu/">UC Berkeley</a> where I received my BS in Electrical Engineering and Computer Science. I was an undergraduate researcher in the <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence and Research Lab</a>, working with <a href="https://people.eecs.berkeley.edu/~svlevine/">Professor Sergey Levine</a>, <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr Pong</a> and <a href="https://ashvin.me/">Ashvin Nair</a> on deep reinforcement learning and robotics research. I also interned at <a href="https://x.company/">(Google) X Robotics</a> where I worked with <a href="https://www.linkedin.com/in/daniel-kappler-a20b337b/">Daniel Kappler</a> on a project at the intersection of reinforcement learning, robotics and meta-learning.
               </p>
 
 
@@ -107,11 +107,12 @@
 
 
               <p align=center>
-                <a href="mailto:mdalal@andrew.cmu.edu">Email</a> &nbsp/&nbsp
-                <a href="https://drive.google.com/file/d/14Jn6rd7IrXrG__q3JKD9ULO6jjdLYSc8/view?usp=sharing">CV</a> &nbsp/&nbsp
+                <a href="mailto:mdalal@andrew.cmu.edu"> Email </a> &nbsp/&nbsp
+                <a href="https://drive.google.com/file/d/14Jn6rd7IrXrG__q3JKD9ULO6jjdLYSc8/view?usp=sharing"> CV </a> &nbsp/&nbsp
                 <a href="https://github.com/mihdalal"> GitHub </a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=5dBp2f4AAAAJ&hl=en"> Google Scholar </a> &nbsp/&nbsp
                 <a href="https://twitter.com/mihdalal"> Twitter </a> 
+                <a href="https://www.linkedin.com/in/murtaza-dalal/"> LinkedIn </a>
               </p>
             </td>
             <td width="33%">
@@ -133,6 +134,45 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <tr>
+            <td width="25%"><img src="images/awac.png" width="240" height="120" style="border-style: none">
+              <td width="75%" valign="top">
+                <p>
+                  <a href="https://arxiv.org/pdf/2006.09359.pdf">
+                    <papertitle>Accelerating Online Reinforcement Learning with Offline Datasets</papertitle>
+                  </a>
+                  <br>
+                  <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza Dalal*</strong>, Steven Lin*, <a href="http://ashvin.me/">Ashvin Nair</a>, <a href="https://shikharbahl.github.io/">Shikhar Bahl</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+                  <br>
+                  <em> Advances in Neural Information Processing Systems (NeurIPS), 2020, in submission </em>  <font color="red"></font>
+                  <br>
+                  [<a href="hhttps://arxiv.org/pdf/2006.09359.pdf">arXiv</a>]
+                  [<a href="https://awacrl.github.io/">site</a>]
+                  [<a href="https://github.com/vitchyr/rlkit">code</a>]
+                </p>
+                <p> Reinforcement learning provides an appealing formalism for learning control
+                    policies from experience. However, the classic active formulation of reinforcement
+                    learning necessitates a lengthy active exploration process for each behavior, making
+                    it difficult to apply in real-world settings. If we can instead allow reinforcement
+                    learning to effectively use previously collected data to aid the online learning
+                    process, where the data could be expert demonstrations or more generally any
+                    prior experience, we could make reinforcement learning a substantially more
+                    practical tool. While a number of recent methods have sought to learn offline from
+                    previously collected data, it remains exceptionally difficult to train a policy with
+                    offline data and improve it further with online reinforcement learning. In this paper
+                    we systematically analyze why this problem is so challenging, and propose a novel
+                    algorithm that combines sample-efficient dynamic programming with maximum
+                    likelihood policy updates, providing a simple and effective framework that is able to
+                    leverage large amounts of offline data and then quickly perform online fine-tuning
+                    of reinforcement learning policies. We show that our method enables rapid learning
+                    of skills with a combination of prior demonstration data and online experience
+                    across a suite of difficult dexterous manipulation and benchmark tasks.
+                </p>
+                <br>
+                </p>
+              </td>
+          </tr>
+
+          <tr>
             <td width="25%"><img src="images/skewfit_vitchyr.png" width="240" height="120" style="border-style: none">
               <td width="75%" valign="top">
                 <p>
@@ -142,7 +182,7 @@
                   <br>
                   <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza Dalal*</strong>, Steven Lin*, <a href="http://ashvin.me/">Ashvin Nair</a>, <a href="https://shikharbahl.github.io/">Shikhar Bahl</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
                   <br>
-                  <em> International Conference on Learning Representations (ICLR) in submission, </em> 2020  <font color="red"></font>
+                  <em> International Conference on Machine Learning (ICML), </em> 2020  <font color="red"></font>
                   <br>
                   [<a href="https://arxiv.org/pdf/1903.03698.pdf">arXiv</a>]
                   [<a href="https://sites.google.com/view/skew-fit">site</a>]
@@ -170,6 +210,29 @@
           </tr>
 
           <tr>
+            <td width="25%"><img src="images/mili.png" width="240" height="120" style="border-style: none">
+              <td width="75%" valign="top">
+                <p>
+                  <a href="https://arxiv.org/abs/2003.02636">
+                    <papertitle>Scalable Multi-Task Imitation Learning with Autonomous Improvement</papertitle>
+                  </a>
+                  <br>
+                  <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza Dalal*</strong>, Steven Lin*, <a href="http://ashvin.me/">Ashvin Nair</a>, <a href="https://shikharbahl.github.io/">Shikhar Bahl</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+                  <br>
+                  <em> International Conference on Robotics and Automation (ICRA), 2020. </em>  <font color="red"></font>
+                  <br>
+                  [<a href="https://arxiv.org/abs/2003.02636">arXiv</a>]
+                  [<a href="https://sites.google.com/view/scalable-mili">site</a>]
+                  [<a href="https://www.youtube.com/watch?v=JJlDdsrE83Q">Video</a>]
+                </p>
+                <p> While robot learning has demonstrated promising results for enabling robots to automatically acquire new skills, a critical challenge in deploying learning-based systems is scale: acquiring enough data for the robot to effectively generalize broadly. Imitation learning, in particular, has remained a stable and powerful approach for robot learning, but critically relies on expert operators for data collection. In this work, we target this challenge, aiming to build an imitation learning system that can continuously improve through autonomous data collection, while simultaneously avoiding the explicit use of reinforcement learning, to maintain the stability, simplicity, and scalability of supervised imitation. To accomplish this, we cast the problem of imitation with autonomous improvement into a multi-task setting. We utilize the insight that, in a multi-task setting, a failed attempt at one task might represent a successful attempt at another task. This allows us to leverage the robot's own trials as demonstrations for tasks other than the one that the robot actually attempted. Using an initial dataset of multi-task demonstration data, the robot autonomously collects trials which are only sparsely labeled with a binary indication of whether the trial accomplished any useful task or not. We then embed the trials into a learned latent space of tasks, trained using only the initial demonstration dataset, to draw similarities between various trials, enabling the robot to achieve one-shot generalization to new tasks. In contrast to prior imitation learning approaches, our method can autonomously collect data with sparse supervision for continuous improvement, and in contrast to reinforcement learning algorithms, our method can effectively improve from sparse, task-agnostic reward signals.
+                </p>
+                <br>
+                </p>
+              </td>
+          </tr>
+
+          <tr>
               <td width="25%"><img src="images/rig_vitch.png" width="200"  style="border-style: none">
                 <td width="75%" valign="top">
                   <p>
@@ -179,7 +242,7 @@
                     <br>
                     <a href="http://ashvin.me/">Ashvin Nair*</a>, <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza Dalal</strong>, <a href="https://shikharbahl.github.io/">Shikhar Bahl</a>, Steven Lin, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
                     <br>
-                    <em> Advances in Neural Information Processing Systems (NeurIPS), </em> 2018  <font color="red"><strong>(Spotlight Presentation)</strong></font>
+                    <em> Advances in Neural Information Processing Systems (NeurIPS), 2018 </em>  <font color="red"><strong>(Spotlight Presentation)</strong></font>
                     <br>
                     [<a href="https://arxiv.org/pdf/1807.04742.pdf">arXiv</a>]
                     [<a href="https://sites.google.com/site/visualrlwithimaginedgoals/">site</a>]
