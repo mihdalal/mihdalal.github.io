@@ -39,6 +39,12 @@ function parseQuery(query) {
 //     }
 //   }
 
-function showPubs(id) {
-    document.getElementById('pubs').innerHTML = document.getElementById(id).innerHTML;
+function showPubs(class_name) {
+    elements = document.getElementsByClassName(class_name);
+    arr = Array.from(elements);
+    var html="";
+    for (i = 0; i < arr.length ; i++){
+        html += arr[i].outerHTML;
+    }
+    document.getElementById('pubs').innerHTML = html;
 }
