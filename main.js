@@ -5,6 +5,8 @@ var queryString = myScript.src.replace(/^[^\?]+\??/, '');
 
 var params = parseQuery(queryString);
 
+var pub_html = null;
+
 function parseQuery(query) {
     var Params = {};
     if (!query) return Params; // return empty object
@@ -40,6 +42,10 @@ function parseQuery(query) {
 //   }
 
 function showPubs(class_name) {
+    if (pub_html == null) {
+        pub_html = document.getElementById('pubs').innerHTML;
+    }
+    document.getElementById('pubs').innerHTML = pub_html;
     elements = document.getElementsByClassName(class_name);
     arr = Array.from(elements);
     var html="";
