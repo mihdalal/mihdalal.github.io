@@ -1,480 +1,611 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
 <head>
-  <meta name=viewport content="width=800">
-  <meta name="description"
-    content="Murtaza Dalal is a PhD student working at the intersection of deep reinforcement learning, artificial intelligence and robotics at CMU." />
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <meta name="google-site-verification" content="N-EAYgi97EAMhnhckscXpcascqOOzYOZnbtdrieVwYg" />
   <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-
-    a {
-      color: #1772d0;
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      color: #f09220;
-      text-decoration: none;
-    }
-
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 400
-    }
-
-    strong {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 600
-    }
-
-    heading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 17px;
-      font-weight: 600
-    }
-
-    papertitle {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 600
-    }
-
-    name {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-      font-weight: 400
-    }
-
-    .one {
-      width: 160px;
-      height: 160px;
-      position: relative;
-    }
-
-    .two {
-      width: 160px;
-      height: 160px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    span.highlight {
-      background-color: #ffffd0;
-    }
+  a {
+  color: #1772d0;
+  text-decoration:none;
+  }
+  a:focus, a:hover {
+  color: #f09228;
+  text-decoration:none;
+  }
+  body,td,th {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400
+  }
+  heading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 17px; /* 19 */
+    font-weight: 600 /* 1000 */
+  }
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  strong {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600 /* 800 */
+  }
+  strongred {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    color: 'red' ;
+    font-size: 16px
+  }
+  sectionheading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600
+  }
+  pageheading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400
+  }
+  .ImageBorder
+  {
+      border-width: 1px;
+      border-color: Black;
+  }
+  span.highlight {
+  background-color: #ffffd0;
+  }
   </style>
-  <link rel="icon" type="image/png" href="images/ri_logo.png">
+  <link rel="shortcut icon" href="https://www.cs.cmu.edu/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon">
+  <script type="text/javascript" src="js/hidebib.js"></script>
   <title>Murtaza Dalal</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
-    type='text/css'>
-  <script src="./main.js"></script>
+  <meta name="Murtaza Dalal's Homepage" http-equiv="Content-Type" content="Murtaza Dalal's Homepage">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+  <!-- Start : Google Analytics Code -->
+  <script>
+    (function(i,s,o,g,r,a,m){i'GoogleAnalyticsObject' | =r;ir | =ir | ||function(){
+    (ir | .q=ir | .q|| | ).push(arguments)},ir | .l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)0 | ;a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64069893-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End : Google Analytics Code -->
+  <!-- Scramble Script by Jeff Donahue -->
+  <script src="js/scramble.js"></script>
 </head>
 
 <body>
-  <table width="840" border="0" align="center" cellspacing="0" cellpadding="20">
-    <tbody>
-      <tr>
-        <td>
-          <p align="center">
-          <p align="center">
-            <name>Murtaza Dalal</name>
-          </p><br>
+<table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr><td>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <p align="center">
+    <!-- <font size="7">Murtaza Dalal</font><br> -->
+    <pageheading>Murtaza Dalal</pageheading><br>
+    <!-- <b>email</b>:&nbsp
+    <font id="email" style="display:inline;">
+      <noscript><i>Please enable Javascript to view</i></noscript>
+    </font>
+    <script>
+    emailScramble = new scrambledString(document.getElementById('email'),
+        'emailScramble', 'umepc@aah.tud.skdc',
+        18,13,16,2,12,8,6,3,5,15,4,14,17,11,10,7,1,9 | );
+    </script> -->
+  </p>
+
+  <tr>
+    <td width="32%" valign="top"><a href="images/profile_pic.png"><img src="images/profile_pic.png" width="100%" style="border-radius:15px"></a>
+    <p align=center>
+    <a href="MURTAZA_DALAL_CV.pdf">CV</a> |
+    <a href="https://scholar.google.com/citations?user=5dBp2f4AAAAJ&hl=en">Google Scholar</a>  |
+    <a href="https://github.com/mihdalal">Github</a> | 
+    <a href="https://www.linkedin.com/in/murtaza-dalal/">LinkedIn</a> |
+    <a href="https://twitter.com/mihdalal">Twitter</a> <br/>
+    <p align=center style="margin-top:-8px;" ><a href="https://twitter.com/mihdalal" class="twitter-follow-button" data-show-count="false">Follow @mihdalal</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+    </p>
+    </td>
+    <td width="68%" valign="top" align="justify">
+
+        <p>
+            Hi! I am a Robotics PhD Candidate in the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at
+            <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. I am advised by <a
+              href="https://www.cs.cmu.edu/~rsalakhu/">Professor Ruslan Salakhutdinov</a> and I also work closely with
+              <a href="https://www.cs.cmu.edu/~dpathak/">Professor Deepak Pathak</a>. My research work
+            is supported by the <a href="https://www.nsfgrfp.org/"> National Science Foundation Graduate
+              Research Fellowship</a>. 
+              I am currently funded by and collaborating closely with <a href="https://www.linkedin.com/in/jianzhangpurdue/">Jian Zhang's</a> group at Apple Research, where I work with <a href="https://www.linkedin.com/in/walter-talbott-678b8aa8/">Walter Talbott</a>.
+              During my PhD, I also spent a summer at NVIDIA research, where I worked in <a href="https://homes.cs.washington.edu/~fox/" >Professor
+              Dieter Fox's</a> lab, advised by <a href="https://ankurhanda.github.io/">Ankur Handa</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a> and <a href="http://web.mit.edu/caelan/www/">Caelan Garrett</a>.
           </p>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <p>
+
+            Previously, I was an undergraduate student at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>
+            where I received my BS in Electrical Engineering and Computer Science. I was an undergraduate
+            researcher in <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence and
+              Research</a>, working with <a href="https://people.eecs.berkeley.edu/~svlevine/">Professor Sergey
+              Levine</a>, <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr Pong</a> and <a
+              href="https://ashvin.me/">Ashvin Nair</a> on deep reinforcement learning and robotics research. I
+            also interned at <a href="https://x.company/">(Google) X Robotics</a> where I worked with <a
+              href="https://www.linkedin.com/in/daniel-kappler-a20b337b/">Daniel Kappler</a>.
+          </p>
+          <p> Feel free to contact me via email! You can reach me at mdalal -at- andrew dot cmu dot edu</p>
+          </p>
+   
+
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr><td><sectionheading>&nbsp;&nbsp;Research </sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+    <p>
+        I am interested in building generalist agents that are capable of solving any task of interest. To that end, my work focuses on 
+        unlocking generalization in robot learning by enabling agents to efficiently explore in the real world, leveraging hierarchy to quickly solve new tasks, 
+        performing imitation learning at scale to train powerful generalist agents and integrating large-scale learning into hierarchical systems to enable broadly capable manipulation systems.
+        Here is some of my work (representative papers are <span class="highlight">highlighted</span>): 
+    </p>
+<br/>
+
+<tr bgcolor="#ffffd0">
+    <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/neuralmotionplanner"><img src="images/nmp.gif"
+        alt="sym" width="90%" style="border-radius:15px"></a></td>
+  <td width="100%" valign="top">
+    <p>
+      <a href="https://mihdalal.github.io/neuralmotionplanner">
+        <papertitle>Neural MP: A Policy Learning Framework for Generalist <br>Neural Motion Planners</papertitle>
+      </a>
+      <br>
+      <strong>Murtaza Dalal*</strong>, 
+      <a href="https://www.linkedin.com/in/jiahui-jim-yang-0666542a0/">Jiahui Yang*</a>,
+      <a href="https://devendrachaplot.github.io/">Russell Mendonca</a>,
+      <a href="https://www.linkedin.com/in/youssefkhaky/">Youssef Khaky</a>,
+      <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>,
+      <a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>
+      <br>
+      <a href="https://mihdalal.github.io/neuralmotionplanner/">site</a> 
+    </p>
+    </p>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffd0">
+    <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/planseqlearn/"><img src="images/psl.gif"
+        alt="sym" width="90%" style="border-radius:15px"></a></td>
+  <td width="75%" valign="top">
+    <p>
+      <a href="https://arxiv.org/abs/2405.01534">
+        <papertitle>Plan-Seq-Learn: Language Model Guided RL for Solving <br>Long Horizon Robotics Tasks</papertitle>
+      </a>
+      <br>
+      <strong>Murtaza Dalal*</strong>, 
+      <a href="https://www.linkedin.com/in/tarun-chiruvolu/">Tarun Chiruvolu</a>,
+      <a href="https://devendrachaplot.github.io/">Devendra Chaplot</a>,
+      <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>
+      <br>
+      <em> International Conference on Learning Representations (ICLR), </em> 2024 <font color="red"></font>
+      <br>
+      <a href="https://arxiv.org/abs/2405.01534">arXiv</a> | 
+      <a href="https://mihdalal.github.io/planseqlearn/">site</a> | 
+      <a href="https://github.com/mihdalal/planseqlearn">code</a> 
+    </p>
+    </p>
+  </td>
+</tr>
 
 
-            <tbody>
-              <tr>
-                <td width="68%" valign="top" align="justify">
-                  <p>
-                    Hi! I am a Robotics PhD Student in the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at
-                    <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. I am advised by <a
-                      href="https://www.cs.cmu.edu/~rsalakhu/">Professor Ruslan Salakhutdinov</a> and I also work closely with
-                      <a href="https://www.cs.cmu.edu/~dpathak/">Professor Deepak Pathak</a>. My research work
-                    is supported by the <a href="https://www.nsfgrfp.org/"> National Science Foundation Graduate
-                      Research Fellowship</a>. During my PhD, I spent a fantastic summer at NVIDIA research, where I worked in <a href="https://homes.cs.washington.edu/~fox/" >Professor
-                      Dieter Fox's</a> lab, advised by <a href="https://ankurhanda.github.io/">Ankur Handa</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a> and <a href="http://web.mit.edu/caelan/www/">Caelan Garrett</a>.
-                  </p>
-                  <p>
+<tr class="all demo" bgcolor="#ffffd0">
+    <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/optimus/"><img src="images/optimus.gif"
+          alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/abs/2305.16309.pdf">
+          <papertitle>Imitating Task and Motion Planning with Visuomotor Transformers</papertitle>
+        </a>
+        <br>
+        <strong>Murtaza Dalal</strong>, 
+        <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar*</a>, 
+        <a href="http://web.mit.edu/caelan/www/">Caelan Garrett*</a>, 
+        <a href="https://ankurhanda.github.io/">Ankur Handa</a>, 
+        <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>, 
+        <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>
+        <br>
+        <em> Conference on Robot Learning (CoRL), </em> 2023 <font color="red"></font>
+        <br>
+        <a href="https://arxiv.org/abs/2305.16309">arXiv</a> | 
+        <a href="https://mihdalal.github.io/optimus/">site</a> | 
+        <a href="https://github.com/NVlabs/Optimus/">code</a> 
+      </p>
+      </p>
+    </td>
+  </tr>
 
-                    Previously, I was an undergraduate student at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>
-                    where I received my BS in Electrical Engineering and Computer Science. I was an undergraduate
-                    researcher in <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence and
-                      Research</a>, working with <a href="https://people.eecs.berkeley.edu/~svlevine/">Professor Sergey
-                      Levine</a>, <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr Pong</a> and <a
-                      href="https://ashvin.me/">Ashvin Nair</a> on deep reinforcement learning and robotics research. I
-                    also interned at <a href="https://x.company/">(Google) X Robotics</a> where I worked with <a
-                      href="https://www.linkedin.com/in/daniel-kappler-a20b337b/">Daniel Kappler</a>.
-                  </p>
-                  <p> Feel free to contact me via email! You can reach me at mdalal -at- andrew dot cmu dot edu</p>
-                  </p>
-                </td>
-                <td width="32%" valign="top"><img src="images/profile_park.jpg" width="100%"
-                    style="border-radius:15px"></a>
-                  <p align="center">
-                    | <a
-                      href="https://drive.google.com/file/d/13wGn8hHbXebYBr76g0zlSaMzlNxGbsBB/view?usp=sharing">CV</a> |
-                    <a href="https://scholar.google.com/citations?user=5dBp2f4AAAAJ&hl=en">Google Scholar</a> |<br>|
-                    <a href="https://www.linkedin.com/in/murtaza-dalal/" target="_blank">LinkedIn</a> |
-                    <a href="https://github.com/mihdalal">Github</a> | <br>|
-                    <a href="https://twitter.com/mihdalal">Twitter</a> |
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+  <tr class="all self-supervised">
+    <td width="33%" valign="top" align="center"><a href="https://devendrachaplot.github.io/projects/seal"><img src="images/seal.gif"
+          alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/abs/2112.01001">
+          <papertitle>SEAL: Self-supervised Embodied Active Learning using <br>Exploration and 3D Consistency</papertitle>
+        </a>
+        <br>
+        <a href="https://devendrachaplot.github.io/">Devendra Chaplot*</a>
+        <strong>Murtaza Dalal</strong>, <a href="http://saurabhg.web.illinois.edu/" >Saurabh Gupta</a>, <a href="https://people.eecs.berkeley.edu/~malik/" >Jitendra Malik</a>, <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>
+        <br>
+        <font color="red"></font>
+        <em> Neural Information Processing Systems (NeurIPS), </em> 2021 <font color="red"></font>
+        <br>
+        <a href="https://arxiv.org/abs/2112.01001">arXiv</a> | 
+        <a href="https://devendrachaplot.github.io/projects/seal">site</a> | 
+        <a href="https://www.youtube.com/watch?v=NmObuQRLNWA">video</a> 
+      </p>
 
+      </p>
+    </td>
+  </tr>
 
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>Research</heading>
-                <p>
-                  I am interested in developing intelligent, efficient, adaptable robotics systems by leveraging
-                  techniques from deep reinforcement learning, machine learning, optimization, control and computer
-                  vision.
-                </p>
-              </td>
-            </tr>
-          </table>
+  <tr class="all hierarchy" bgcolor="#ffffd0">
+    <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/raps/"><img src="images/raps.gif"
+          alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/pdf/2110.15360.pdf">
+          <papertitle>Accelerating Robotic Reinforcement Learning via <br>Parameterized Action Primitives</papertitle>
+        </a>
+        <br>
+        <strong>Murtaza Dalal*</strong>, <a
+          href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>, <a
+          href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>
+        <br>
+        <font color="red"></font>
+        <em> Neural Information Processing Systems (NeurIPS), </em> 2021 <font color="red"></font>
+        <br>
+        <a href="https://arxiv.org/pdf/2110.15360.pdf">arXiv</a> | 
+        <a href="https://mihdalal.github.io/raps/">site</a> | 
+        <a href="https://github.com/mihdalal/raps">code</a>
+      </p>
 
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" valign="middle">
-              <heading>Publication Areas:</heading>
-              <p>
-                <a href="#pubs" onclick="showPubs('all'); return false;" style="text-decoration: underline; color: rgb(0, 0, 0);">All</a>
-                <a href="#pubs" onclick="showPubs('hierarchy'); return false;" style="text-decoration: underline; color: rgb(0, 0, 0);">Hierarchical Learning</a>
-                <a href="#pubs" onclick="showPubs('self-supervised'); return false;" style="text-decoration: underline; color: rgb(0, 0, 0);">Self-supervised Learning</a>
-                <a href="#pubs" onclick="showPubs('visual-robot'); return false;" style="text-decoration: underline; color: rgb(0, 0, 0);">Goal-conditioned Learning</a>
-                <a href="#pubs" onclick="showPubs('demo'); return false;" style="text-decoration: underline; color: rgb(0, 0, 0);">Demo-accelerated Learning</a>
-              </p>
-              <small><span class="tag">(* indicate equal contribution)</span></small>
-            </td>
-          </tr>
-        </table>
+      </p>
+    </td>
+  </tr>
 
-          <table id="pubs" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr class="all demo">
+    <td width="33%" valign="top" align="center"><a href="https://awacrl.github.io/"><img src="images/awac.gif"
+          alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/pdf/2006.09359.pdf">
+          <papertitle>Accelerating Online Reinforcement Learning with Offline Datasets</papertitle>
+        </a>
+        <br>
+        <a href="http://ashvin.me/"> Ashvin Nair*</a>,  <a
+          href="https://people.eecs.berkeley.edu/~abhigupta/">Abhishek Gupta*</a>, <strong>Murtaza Dalal</strong>, <a
+          href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+        <font color="red"></font>
+        <br>
+        <a href="hhttps://arxiv.org/pdf/2006.09359.pdf">arXiv</a> | 
+        <a href="https://awacrl.github.io/">site</a> | 
+        <a href="https://github.com/vitchyr/rlkit">code</a> | 
+        <a href="https://bair.berkeley.edu/blog/2020/09/10/awac">blog</a> 
+      </p>
+      <br>
+      </p>
+    </td>
+  </tr>
 
-            <tr class="hierarchy">
-              <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/planseqlearn/"><img src="images/psl.gif"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/abs/2405.01534">
-                    <papertitle>Plan-Seq-Learn: Language Model Guided RL for Solving Long Horizon Robotics Tasks</papertitle>
-                  </a>
-                  <br>
-                  <strong>Murtaza Dalal*</strong>, 
-                  <a href="https://www.linkedin.com/in/tarun-chiruvolu/">Tarun Chiruvolu</a>,
-                  <a href="https://devendrachaplot.github.io/">Devendra Chaplot</a>,
-                  <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>
-                  <br>
-                  <em> International Conference on Learning Representations (ICLR), </em> 2024 <font color="red"></font>
-                  <br>
-                  [<a href="https://arxiv.org/abs/2405.01534">arXiv</a>]
-                  [<a href="https://mihdalal.github.io/planseqlearn/">site</a>]
-                  [<a href="https://github.com/mihdalal/planseqlearn">code</a>]
-                </p>
-                </p>
-              </td>
-            </tr>
+  <tr class="all self-supervised visual-robot" bgcolor="#ffffd0">
+    <td width="33%" valign="top" align="center"><a href="https://sites.google.com/view/skew-fit"><img
+          src="images/skew.png" alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/pdf/1903.03698.pdf">
+          <papertitle>Skew-Fit: State-Covering Self-Supervised Reinforcement Learning</papertitle>
+        </a>
+        <br>
+        <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza
+          Dalal*</strong>, Steven Lin*, <a href="http://ashvin.me/">Ashvin Nair</a>, <a
+          href="https://shikharbahl.github.io/">Shikhar Bahl</a>, <a
+          href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+        <br>
+        <em> International Conference on Machine Learning (ICML), </em> 2020 <font color="red"></font>
+        <br>
+        <a href="https://arxiv.org/pdf/1903.03698.pdf">arXiv</a> | 
+        <a href="https://sites.google.com/view/skew-fit">site</a> | 
+        <a href="https://github.com/vitchyr/rlkit">code</a> 
+      </p>
+      <br>
+      </p>
+    </td>
+  </tr>
 
-            <tr class="all demo">
-              <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/optimus/"><img src="images/optimus.gif"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/abs/2305.16309.pdf">
-                    <papertitle>Imitating Task and Motion Planning with Visuomotor Transformers</papertitle>
-                  </a>
-                  <br>
-                  <strong>Murtaza Dalal</strong>, 
-                  <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar*</a>, 
-                  <a href="http://web.mit.edu/caelan/www/">Caelan Garrett*</a>, 
-                  <a href="https://ankurhanda.github.io/">Ankur Handa</a>, 
-                  <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>, 
-                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>
-                  <br>
-                  <em> Conference on Robot Learning (CoRL), </em> 2023 <font color="red"></font>
-                  <br>
-                  [<a href="https://arxiv.org/abs/2305.16309">arXiv</a>]
-                  [<a href="https://mihdalal.github.io/optimus/">site</a>]
-                  [<a href="https://github.com/NVlabs/Optimus/">code</a>]
-                </p>
-                </p>
-              </td>
-            </tr>
-            
-            <tr class="all hierarchy">
-              <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/raps/"><img src="images/raps.gif"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/pdf/2110.15360.pdf">
-                    <papertitle>Accelerating Robotic Reinforcement Learning via Parameterized Action Primitives</papertitle>
-                  </a>
-                  <br>
-                  <strong>Murtaza Dalal*</strong>, <a
-                    href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>, <a
-                    href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>
-                  <br>
-                  <font color="red"></font>
-                  <em> Neural Information Processing Systems (NeurIPS), </em> 2021 <font color="red"></font>
-                  <br>
-                  [<a href="https://arxiv.org/pdf/2110.15360.pdf">arXiv</a>]
-                  [<a href="https://mihdalal.github.io/raps/">site</a>]
-                  [<a href="https://github.com/mihdalal/raps">code</a>]
-                </p>
+  <tr class="all demo">
+    <td width="33%" valign="top" align="center"><a href="https://sites.google.com/view/scalable-mili"><img
+          src="images/mili.png" alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/abs/2003.02636">
+          <papertitle>Scalable Multi-Task Imitation Learning with Autonomous Improvement</papertitle>
+        </a>
+        <br>
+        <a href="https://www.avisingh.org/">Avi Singh*</a>, <a href="http://evjang.com/">Eric Jang</a>, <a
+          href="https://www.linkedin.com/in/alexander-irpan-b2aa355b/">Alexander Irpan</a>, <a
+          href="https://www.linkedin.com/in/daniel-kappler-a20b337b/">Daniel Kappler</a>, <strong>Murtaza
+          Dalal</strong>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a
+          href="https://cs.stanford.edu/people/khansari/">Mohi Khansari</a>, <a
+          href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+        <br>
+        <em> International Conference on Robotics and Automation (ICRA), 2020. </em>
+        <font color="red"></font>
+        <br>
+        <a href="https://arxiv.org/abs/2003.02636">arXiv</a> | 
+        <a href="https://sites.google.com/view/scalable-mili">site</a> | 
+        <a href="https://www.youtube.com/watch?v=JJlDdsrE83Q">video</a> 
+      </p>
+      <br>
+      </p>
+    </td>
+  </tr>
 
-                </p>
-              </td>
-            </tr>
+  <tr class="all visual-robot" bgcolor="#ffffd0">
+    <td width="33%" valign="top" align="center"><a
+        href="https://sites.google.com/site/visualrlwithimaginedgoals/"><img src="images/rig_vitch.png"
+          alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="75%" valign="top">
+      <p>
+        <a href="http://papers.nips.cc/paper/8132-visual-reinforcement-learning-with-imagined-goals.pdf">
+          <papertitle>Visual Reinforcement Learning with Imagined Goals</papertitle>
+        </a>
+        <br>
+        <a href="http://ashvin.me/">Ashvin Nair*</a>, <a
+          href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza
+          Dalal</strong>, <a href="https://shikharbahl.github.io/">Shikhar Bahl</a>, Steven Lin, <a
+          href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+        <br>
+        <em> Advances in Neural Information Processing Systems (NeurIPS), 2018 </em>
+        <strong>(Spotlight)</strong>
+        <br>
+        <a href="https://arxiv.org/pdf/1807.04742.pdf">arXiv</a> | 
+        <a href="https://sites.google.com/site/visualrlwithimaginedgoals/">site</a> | 
+        <a href="https://github.com/vitchyr/rlkit">code</a> | 
+        <a href="https://bair.berkeley.edu/blog/2018/09/06/rig/">blog</a> 
+      </p>
+      <br>
+      </p>
+    </td>
+  </tr>
+  <tr class="all hierarchy">
+    <td width="33%" valign="top" align="center"><a
+        href="https://sites.google.com/view/composing-real-world-policies"><img src="images/composable.png"
+          alt="sym" width="90%" style="border-radius:15px"></a></td>
 
-            <tr class="all self-supervised">
-              <td width="33%" valign="top" align="center"><a href="https://devendrachaplot.github.io/projects/seal"><img src="images/seal.gif"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/abs/2112.01001">
-                    <papertitle>SEAL: Self-supervised Embodied Active Learning using Exploration and 3D Consistency</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://devendrachaplot.github.io/">Devendra Chaplot*</a>
-                  <strong>Murtaza Dalal</strong>, <a href="http://saurabhg.web.illinois.edu/" >Saurabh Gupta</a>, <a href="https://people.eecs.berkeley.edu/~malik/" >Jitendra Malik</a>, <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>
-                  <br>
-                  <font color="red"></font>
-                  <em> Neural Information Processing Systems (NeurIPS), </em> 2021 <font color="red"></font>
-                  <br>
-                  [<a href="https://arxiv.org/abs/2112.01001">arXiv</a>]
-                  [<a href="https://devendrachaplot.github.io/projects/seal">site</a>]
-                  [<a href="https://www.youtube.com/watch?v=NmObuQRLNWA">video</a>]
-                </p>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/abs/1803.06773">
+          <papertitle>
+            Composable Deep Reinforcement Learning for Robotic Manipulation
+          </papertitle>
+        </a>
+        <br>
+        <a href="https://people.eecs.berkeley.edu/~haarnoja/">Tuomas Haarnoja*</a>,
+        <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong</a>,
+        Aurick Zhou,
+        <strong>Murtaza Dalal</strong>,
+        <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
+        <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+        <br>
+        <em>
+          International Conference on Robotics and Automation (ICRA), 2018.
+        </em>
+        <br>
+        <a href="https://arxiv.org/pdf/1803.06773.pdf">arXiv</a> | 
+        <a href="https://sites.google.com/view/composing-real-world-policies">site</a> | 
+        <a href="https://github.com/haarnoja/softqlearning/">code</a> 
+      </p>
+    </td>
+  </tr>
+  <tr class="all model+RL">
+    <td width="33%" valign="top" align="center"><a href="https://bair.berkeley.edu/blog/2018/04/26/tdm/"><img
+          src="images/ant-smaller-2.gif" alt="sym" width="90%" style="border-radius:15px"></a></td>
 
-                </p>
-              </td>
-            </tr>
+    <td width="75%" valign="top">
+      <p>
+        <a href="https://arxiv.org/pdf/1802.09081.pdf">
+          <papertitle>Temporal Difference Models: Model-Free Deep RL for Model-Based Control</papertitle>
+        </a>
+        <br>
+        <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>,
+        <a href="http://sg717.user.srcf.net/">Shixiang Gu*</a>,
+        <strong>Murtaza Dalal</strong>,
+        <a href="https://people.eecs.berkeley.edu/~svlevine/">
+          Sergey Levine
+        </a>
+        <br>
+        <em>
+          International Conference on Learning Representations (ICLR), 2018.
+        </em>
+        <br>
+        <a href="https://arxiv.org/abs/1802.09081">arXiv</a> | 
+        <a href="https://github.com/vitchyr/rlkit">code</a> | 
+        <a href="https://bair.berkeley.edu/blog/2018/04/26/tdm/">blog</a> 
+      </p>
+    </td>
+  </tr>
 
-            <tr class="all demo">
-              <td width="33%" valign="top" align="center"><a href="https://awacrl.github.io/"><img src="images/awac.png"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/pdf/2006.09359.pdf">
-                    <papertitle>Accelerating Online Reinforcement Learning with Offline Datasets</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://ashvin.me/"> Ashvin Nair*</a>,  <a
-                    href="https://people.eecs.berkeley.edu/~abhigupta/">Abhishek Gupta*</a>, <strong>Murtaza Dalal</strong>, <a
-                    href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
-                  <font color="red"></font>
-                  <br>
-                  [<a href="hhttps://arxiv.org/pdf/2006.09359.pdf">arXiv</a>]
-                  [<a href="https://awacrl.github.io/">site</a>]
-                  [<a href="https://github.com/vitchyr/rlkit">code</a>]
-                  [<a href="https://bair.berkeley.edu/blog/2020/09/10/awac">blog</a>]
-                </p>
-                <br>
-                </p>
-              </td>
-            </tr>
+<hr/>
 
-            <tr class="all self-supervised visual-robot">
-              <td width="33%" valign="top" align="center"><a href="https://sites.google.com/view/skew-fit"><img
-                    src="images/skew.png" alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/pdf/1903.03698.pdf">
-                    <papertitle>Skew-Fit: State-Covering Self-Supervised Reinforcement Learning</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza
-                    Dalal*</strong>, Steven Lin*, <a href="http://ashvin.me/">Ashvin Nair</a>, <a
-                    href="https://shikharbahl.github.io/">Shikhar Bahl</a>, <a
-                    href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
-                  <br>
-                  <em> International Conference on Machine Learning (ICML), </em> 2020 <font color="red"></font>
-                  <br>
-                  [<a href="https://arxiv.org/pdf/1903.03698.pdf">arXiv</a>]
-                  [<a href="https://sites.google.com/view/skew-fit">site</a>]
-                  [<a href="https://github.com/vitchyr/rlkit">code</a>]
-                </p>
-                <br>
-                </p>
-              </td>
-            </tr>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
+    <tr><td><br><p align="right"><font size="1.5">
+    Modified version of template from <a href="http://www.cs.berkeley.edu/~barron/">here</a>
+    </font></p></td></tr>
+</table>
 
-            <tr class="all demo">
-              <td width="33%" valign="top" align="center"><a href="https://sites.google.com/view/scalable-mili"><img
-                    src="images/mili.png" alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/abs/2003.02636">
-                    <papertitle>Scalable Multi-Task Imitation Learning with Autonomous Improvement</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://www.avisingh.org/">Avi Singh*</a>, <a href="http://evjang.com/">Eric Jang</a>, <a
-                    href="https://www.linkedin.com/in/alexander-irpan-b2aa355b/">Alexander Irpan</a>, <a
-                    href="https://www.linkedin.com/in/daniel-kappler-a20b337b/">Daniel Kappler</a>, <strong>Murtaza
-                    Dalal</strong>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a
-                    href="https://cs.stanford.edu/people/khansari/">Mohi Khansari</a>, <a
-                    href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
-                  <br>
-                  <em> International Conference on Robotics and Automation (ICRA), 2020. </em>
-                  <font color="red"></font>
-                  <br>
-                  [<a href="https://arxiv.org/abs/2003.02636">arXiv</a>]
-                  [<a href="https://sites.google.com/view/scalable-mili">site</a>]
-                  [<a href="https://www.youtube.com/watch?v=JJlDdsrE83Q">video</a>]
-                </p>
-                <br>
-                </p>
-              </td>
-            </tr>
-
-            <tr class="all visual-robot">
-              <td width="33%" valign="top" align="center"><a
-                  href="https://sites.google.com/site/visualrlwithimaginedgoals/"><img src="images/rig_vitch.png"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-              <td width="75%" valign="top">
-                <p>
-                  <a href="http://papers.nips.cc/paper/8132-visual-reinforcement-learning-with-imagined-goals.pdf">
-                    <papertitle>Visual Reinforcement Learning with Imagined Goals</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://ashvin.me/">Ashvin Nair*</a>, <a
-                    href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>, <strong>Murtaza
-                    Dalal</strong>, <a href="https://shikharbahl.github.io/">Shikhar Bahl</a>, Steven Lin, <a
-                    href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
-                  <br>
-                  <em> Advances in Neural Information Processing Systems (NeurIPS), 2018 </em>
-                  <font color="red"><strong>(Spotlight Presentation)</strong></font>
-                  <br>
-                  [<a href="https://arxiv.org/pdf/1807.04742.pdf">arXiv</a>]
-                  [<a href="https://sites.google.com/site/visualrlwithimaginedgoals/">site</a>]
-                  [<a href="https://github.com/vitchyr/rlkit">code</a>]
-                  [<a href="https://bair.berkeley.edu/blog/2018/09/06/rig/">blog</a>]
-                </p>
-                <br>
-                </p>
-              </td>
-            </tr>
-            <tr class="all hierarchy">
-              <td width="33%" valign="top" align="center"><a
-                  href="https://sites.google.com/view/composing-real-world-policies"><img src="images/composable.png"
-                    alt="sym" width="90%" style="border-radius:15px"></a></td>
-
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/abs/1803.06773">
-                    <papertitle>
-                      Composable Deep Reinforcement Learning for Robotic Manipulation
-                    </papertitle>
-                  </a>
-                  <br>
-                  <a href="https://people.eecs.berkeley.edu/~haarnoja/">Tuomas Haarnoja*</a>,
-                  <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong</a>,
-                  Aurick Zhou,
-                  <strong>Murtaza Dalal</strong>,
-                  <a href="https://people.eecs.berkeley.edu/~pabbeel/">PieterAbbeel</a>,
-                  <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
-                  <br>
-                  <em>
-                    International Conference on Robotics and Automation (ICRA), 2018.
-                  </em>
-                  <br>
-                  [<a href="https://arxiv.org/pdf/1803.06773.pdf">arXiv</a>]
-                  [<a href="https://sites.google.com/view/composing-real-world-policies">site</a>]
-                  [<a href="https://github.com/haarnoja/softqlearning/">code</a>]
-                </p>
-              </td>
-            </tr>
-            <tr class="all model+RL">
-              <td width="33%" valign="top" align="center"><a href="https://bair.berkeley.edu/blog/2018/04/26/tdm/"><img
-                    src="images/ant-smaller-2.gif" alt="sym" width="90%" style="border-radius:15px"></a></td>
-
-              <td width="75%" valign="top">
-                <p>
-                  <a href="https://arxiv.org/pdf/1802.09081.pdf">
-                    <papertitle>Temporal Difference Models: Model-Free Deep RL for Model-Based Control</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://people.eecs.berkeley.edu/~vitchyr/">Vitchyr H. Pong*</a>,
-                  <a href="http://sg717.user.srcf.net/">Shixiang Gu*</a>,
-                  <strong>Murtaza Dalal</strong>,
-                  <a href="https://people.eecs.berkeley.edu/~svlevine/">
-                    Sergey Levine
-                  </a>
-                  <br>
-                  <em>
-                    International Conference on Learning Representations (ICLR), 2018.
-                  </em>
-                  <br>
-                  [<a href="https://arxiv.org/abs/1802.09081">arXiv</a>]
-                  [<a href="https://github.com/vitchyr/rlkit">code</a>]
-                  [<a href="https://bair.berkeley.edu/blog/2018/04/26/tdm/">blog</a>]
-                </p>
-              </td>
-            </tr>
-          </table>
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-                <heading>Teaching</heading>
-              </td>
-            </tr>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="20">
-            <tr>
-              <td width="33%" valign="top" align="center"><a href="https://inst.eecs.berkeley.edu/~cs188/sp19/"><img
-                    src="images/cs188_bot.png" alt="sym" width="90%" style="border-radius:15px"></a></td>
-
-              <td width="75%" valign="center">
-                <p>
-                  <a href="https://inst.eecs.berkeley.edu/~cs188/sp19/">
-                    <papertitle>CS188 - Spring 2019 (uGSI)</papertitle>
-                  </a>
-                </p>
-              </td>
-            </tr>
-          </table>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-                <br>
-                <p align="right">
-                  <font size="2">
-                    Credit to this great <a
-                      href="https://github.com/jonbarron/jonbarron_website"><strong>repo</strong></a> for providing the
-                    source code for the website!
-                  </font>
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-  </table>
+  </td></tr>
+</table>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('jpm15_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('fg15_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('wacv15_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('iclr15_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('cvpr15_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('iccv15_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('jmlr16_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('cvpr16_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('iclr16_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('cvpr17_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('icml17_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('nips17_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('iclr18_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('icml18_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('cvprw18_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('iclr19_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('assemblies19_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('sgm20_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('compgan18_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('icml19_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('phd19_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('neurips19_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('plan2explore_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('icml20_smp_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('uai20_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('neurips20_ndp_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('iclr21_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('worldsheet_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('flavr_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('icra21_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('ral21_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('keypoint3D_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('spt_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('hndp_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('rma_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('energyloco_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('lexa_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('raps_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('lff_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('envexplore_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('rtk_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('whirl_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('tars_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('clear_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('rb2_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('navloco_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('gptplanner_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('geometrydex_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('revolver_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('eccv22_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('clipICML22_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('arma_abs');
+</script>
 </body>
 
 </html>
